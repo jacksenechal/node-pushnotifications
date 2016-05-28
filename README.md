@@ -87,11 +87,10 @@ var data = {
   message: 'Powered by AppFeel',
   otherfields: 'optionally add more data'
 };
-push.send(deviceIds, data, function (result) {
+push.send(deviceIds, data, function (error, result) {
 	console.log(result);
 });
 ```
-Result will contain 'true' or 'an error description'.
 
 
 ##Resources
